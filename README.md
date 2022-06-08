@@ -1,4 +1,4 @@
-# vue-movie-db-yt
+# MovieApp by using Vue 3.0
 
 ## Project setup
 ```
