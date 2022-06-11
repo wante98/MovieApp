@@ -10,6 +10,10 @@
   
       </router-link>
     </div>
+    <form @submit.prevent="SearchMovies()" class="search-box">
+      <input type="text" placeholder="What are you looking for?" v-model="search" />
+      <input type="submit" value="Search" />
+    </form>
 home
 </div>
 </template>
@@ -28,5 +32,28 @@ home
       z-index: 0;
     }
   }
+  .detail {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 16px;
+      z-index: 1;
+      h3 {
+        color:#FFF;
+        margin-bottom: 16px;
+      }
+      p {
+        color: #FFF;
+      }
+    }
+    .search-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    }
 }
 </style>
