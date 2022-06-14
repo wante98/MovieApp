@@ -9,23 +9,14 @@ const routes = [
     name: 'Home',
     component: Home
   },
+ 
   {
     path: '/movie/:id',
     name: 'Movie Detail',
     component: MovieDetail
   }
 ]
-const route = [
-  {
-    path:'/',
-    name:'Home',
-    component:Home
-  },
-  {
-    path:'/movie/:id',
-    name:'Movie Detail',
-  }
-]
+
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),

@@ -1,5 +1,5 @@
 <template>
-<div class="home-home">
+<div class="home">
     <div class="feature-card">
       <router-link to="/movie/tt0409591">
         <img src="https://m.media-amazon.com/images/M/MV5BZmQ5NGFiNWEtMmMyMC00MDdiLTg4YjktOGY5Yzc2MDUxMTE1XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg" alt="Naruto Poster" class="featured-img" />
@@ -18,9 +18,35 @@
 </div>
 </template>
 <script>
+import {ref} from 'vue';
+import env from "@/env.js";
+export default {
+  setup(){
+    const search = ref("");
+    const movies = ref([]);
+
+    const SearchMovies = () =>{
+      if(search.value != ""){
+        fetch(`http://www.omdbapi.com/?apikey=${env.apikey}&s=${search.value}`)
+        .then(response => reponse.json())
+        .then(data=>{
+          movies.value = data.Search;
+          search.value = "";
+
+        });
+      }
+    }
+
+    return{
+      search,
+      movies,
+      SearchMovies
+    }
+  }
+}
 </script>
 <style lang="scss">
-.home-home {
+.home {
   .feature-card {
     position: relative;
     .featured-img {
@@ -91,7 +117,6 @@
         }
       }
     }
-  }
-    
+  } 
 }
 </style>
