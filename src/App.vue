@@ -18,7 +18,9 @@ export default {
   components: {
     //HelloWorld
   }
+
 }
+
 </script>
 
 <style lang="scss">
@@ -31,6 +33,8 @@ export default {
     background: transparentize(#42B883, 0.5);
   }
 }
+
+
 body {
   background-color: #35495E;
 }
