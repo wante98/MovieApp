@@ -1,9 +1,11 @@
 <template>
   <div class="movie-detail">
     <h2>{{movie.Title}}</h2>
-    <p>{{ movie.Year }}</p>
+    <p>Release year: {{ movie.Year }}</p>
     <img :src="movie.Poster" alt="Movie Poster" class="featured-img" />
     <p>{{ movie.Plot }}</p>
+    <div><p><button @click="goToHome()">Back</button></p></div>
+
   </div>
 </template>
 
@@ -22,11 +24,16 @@ export default {
           movie.value = data;
         });
     });
-    
+
     return {
       movie
     }
-  }
+  },
+  
+   goToHome(){
+   this.$router.push('/Home.vue'); 
+      }
+  
 }
 </script>
 

@@ -1,11 +1,11 @@
 <template>
   <div class="home">
     <div class="feature-card">
-      <router-link to="/movie/tt0409591">
-        <img src="https://m.media-amazon.com/images/M/MV5BZmQ5NGFiNWEtMmMyMC00MDdiLTg4YjktOGY5Yzc2MDUxMTE1XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg" alt="Naruto Poster" class="featured-img" />
+      <router-link to="/movie/tt1745960">
+        <img src="https://odunews.com/wp-content/uploads/2019/12/top_gun_maverick_TGM_Teaser_1_Sheet_Jacket_Back_V12_rgb.0.jpg" alt="Top Gun 2 Poster" class="featured-img" />
         <div class="detail">
-          <h3>Naruto</h3>
-          <p>Naruto Uzumaki, a mischievous adolescent ninja, struggles as he searches for recognition and dreams of becoming the Hokage, the village's leader and strongest ninja.</p>
+          <h3>Top Gun: Maverick</h3>
+          <p>After more than thirty years of service as one of the Navy's top aviators, Pete Mitchell is where he belongs, pushing the envelope as a courageous test pilot and dodging the advancement in rank that would ground him.</p>
         </div>
       </router-link>
     </div>

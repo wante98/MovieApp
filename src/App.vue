@@ -1,7 +1,7 @@
 <template>
   <header>
     <router-link to="/">
-    <h1><span>Vue3.0</span>電影Bar</h1>
+    <h1><span>WOW!</span>MovieBar</h1>
     </router-link>
   </header>
 <main>
