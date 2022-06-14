@@ -1,5 +1,8 @@
 # MovieApp by using Vue 3.0
 
+## Project link
+https://wante98.github.io/MovieApp/
+
 ## Project setup
 ```
 yarn install
