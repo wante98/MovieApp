@@ -22,6 +22,7 @@ export default {
           movie.value = data;
         });
     });
+    
     return {
       movie
     }
